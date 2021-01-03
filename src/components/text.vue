@@ -7,13 +7,12 @@
 </template>
 
 <script>
-import { text, getStyle } from '../mixins'
+import { getStyle } from '../mixins'
 
 export default {
   name: 'textShimmer',
 
   mixins: [
-    text,
     getStyle
   ],
 

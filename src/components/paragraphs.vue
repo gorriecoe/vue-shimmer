@@ -8,14 +8,9 @@
 
 <script>
 import sentencesShimmer from './sentences'
-import { text } from '../mixins'
 
 export default {
   name: 'paragraghsShimmer',
-
-  mixins: [
-    text
-  ],
 
   components: {
     sentencesShimmer

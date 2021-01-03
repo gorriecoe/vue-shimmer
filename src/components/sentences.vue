@@ -9,14 +9,9 @@
 
 <script>
 import textShimmer from './text'
-import { text } from '../mixins'
 
 export default {
   name: 'sentencesShimmer',
-
-  mixins: [
-    text
-  ],
 
   components: {
     textShimmer
