@@ -6,6 +6,7 @@
 
 <script>
 import { dimensions, getStyle } from '../mixins'
+const WIDTH = '100%'
 
 export default {
   name: 'imageShimmer',
@@ -28,14 +29,14 @@ export default {
   computed: {
     styles () {
       return {
-        width: '100%',
+        width: WIDTH,
         maxWidth: this.width + 'px',
         maxHeight: this.height + 'px'
       }
     },
     ratioStyles () {
       return {
-        width: '100%',
+        width: WIDTH,
         paddingTop: this.ratio + '%'
       }
     }

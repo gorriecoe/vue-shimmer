@@ -8,6 +8,7 @@
 
 <script>
 import { getStyle } from '../mixins'
+const WIDTH = '100%'
 
 export default {
   name: 'textShimmer',
@@ -38,7 +39,7 @@ export default {
   computed: {
     styles () {
       return {
-        width: '100%',
+        width: WIDTH,
         maxWidth: this.width,
         display: 'inline-block'
       }
@@ -46,7 +47,7 @@ export default {
     textStyles () {
       return {
         height: this.height,
-        width: '100%',
+        width: WIDTH,
         display: 'inline-block',
         verticalAlign: 'middle'
       }
@@ -54,7 +55,7 @@ export default {
     lineStyles () {
       return {
         height: this.lineHeight,
-        width: '100%',
+        width: WIDTH,
         display: 'block'
       }
     }
