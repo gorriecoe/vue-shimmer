@@ -1,0 +1,44 @@
+{
+  "name": "vue-shimmer",
+  "version": "1.0.0",
+  "description": "A placeholder shimmer for vuejs, unlike other placeholder modules Shimmer inherits basic styles from css and style attributes.",
+  "author": "Gorrie Coe <gorriecoe@gmail.com>",
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "lint-fix": "eslint . --fix"
+  },
+  "main": "./src",
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^4.5.9",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "lint-staged": "^9.5.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.4"
+  },
+  "homepage": "https://github.com/gorriecoe/vue-shimmer",
+  "keywords": [
+    "vuejs",
+    "component",
+    "content",
+    "loader",
+    "loading"
+  ],
+  "license": "BSD-3-Clause",
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorriecoe/vue-shimmer.git"
+  }
+}

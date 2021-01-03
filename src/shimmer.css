@@ -1,0 +1,21 @@
+@keyframes background-shimmer{
+  0%{
+    background-position: 100% 0
+  }
+  100%{
+    background-position: -100% 0
+  }
+}
+
+.shimmer {
+  position: relative;
+  animation-duration: var(--shimmer-duration, 1.5s);
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: background-shimmer;
+  animation-timing-function: var(--shimmer-timing-function, linear);
+  background: var(--shimmer-color, currentColor);
+  background: linear-gradient(to right, var(--shimmer-color, currentColor) 8%, var(--shimmer-shine-color, rgba(255, 255, 255, 0.8)) 18%, var(--shimmer-color, currentColor) 33%);
+  background-size: 250%;
+  border-radius: var(--shimmer-radius);
+}
